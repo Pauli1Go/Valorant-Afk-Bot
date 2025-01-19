@@ -1,5 +1,4 @@
 from time import sleep
-import sys
 import keyboard 
 import random
 import pyautogui 
@@ -93,10 +92,11 @@ if number == None:
     print()
 
 
-print(f"Detected screen resolution {resx}x{resy}")
 print("[INFO] Stretched maybe wont work as expected!")
 print("[INFO] Only tested resolution is 1600x900!")
 print("[INFO] It's recommended to set your game to this resolution!")
+print()
+print(f"Detected screen resolution {resx}x{resy}")
 
 if not always_use_detected_resolution:
     setres = input("Is this resolution correct? (Y/n): ").strip().lower()
